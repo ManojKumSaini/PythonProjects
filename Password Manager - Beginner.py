@@ -9,8 +9,7 @@ def add():
     pwd = input('Password: ')
     with open('passwords.txt', 'a') as f:
         f.write(name + '|' + pwd )
-                
-# with function mostly used as substitute for try/finally and w: write over, r: read only, a: check if exists and create if not              
+                           
 
 def view():
     with open('passwords.txt','r') as f:
